@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/mine/mine",
+    "pages/about/about",
+    "pages/show/show",
+    "pages/new/new"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#1f1d61",
+    "navigationBarTitleText": "杭电风略",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "images/discovery_fill.png",
+        "iconPath": "images/discovery.png",
+        "pagePath": "pages/index/index",
+        "text": "发现"
+      },
+      {
+        "selectedIconPath": "images/mine_fill.png",
+        "iconPath": "images/mine.png",
+        "pagePath": "pages/mine/mine",
+        "text": "我"
+      },
+      {
+        "selectedIconPath": "images/about_fill.png",
+        "iconPath": "images/about.png",
+        "pagePath": "pages/about/about",
+        "text": "关于杭电"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}

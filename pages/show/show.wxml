@@ -1,0 +1,20 @@
+<!--pages/show/show.wxml-->
+<view class="showpage" bindtouchstart="touchStart" bindtouchend="touchEnd">
+  <view class="showpage-area">
+  <image class="img" src='{{img}}' mode='widthFix'></image>
+  <text class="title">{{title}}</text>
+<!-- 分享 -->
+<view class='share'>
+  <image src='/images/share.png'></image>
+  <text>分享</text>
+  <button open-type='share'></button>
+</view>
+<view class='download'>
+  <image src='/images/download.png'></image>
+  <text>下载</text>
+  <button  bindtap='saveImg'></button>
+</view>
+  <view class="price">{{price}}</view>
+  </view>
+  <loading hidden="{{hiddenLoading}}">正在加载</loading>
+</view>

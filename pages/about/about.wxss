@@ -1,0 +1,27 @@
+/* pages/me/me.wxss */
+.about {
+  background: #1f1d61;
+}
+
+.about .avatar {
+  margin: 0 auto;
+  width: 90%;
+  height: 30%;
+  background: #fff;
+  border-radius: 25rpx 25rpx 0rpx 0rpx;
+}
+
+.about .avatar image {
+  width: 90%;
+  height: 100rpx;
+  padding: 20rpx 20rpx 6rpx 20rpx;
+  display: block;
+}
+
+.about .avatar text {
+  font-size: 24rpx;
+  color: #376a6d;
+  display: block;
+  padding: 10rpx 20rpx 10rpx 20rpx;
+}
+

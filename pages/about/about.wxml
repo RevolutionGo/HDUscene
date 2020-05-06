@@ -1,0 +1,28 @@
+<!-- map.wxml -->
+<view class='about'>
+  <view class='avatar'>
+  <view class='item'>
+    <view wx:for='{{grides}}' wx:key='' data-index='index' wx:if='{{(index%2)==0}}'>
+      <image src='{{item.img}}' mode='widthFix'></image>
+      <text class='title'>{{item.title}}</text>
+      <text class='position'>{{item.position}}</text>
+    </view>
+  </view>
+  </view>
+</view>
+<view class='map'>
+<map
+  id="map"
+  longitude="120.343513"
+  latitude="30.313616"
+  scale="16"
+  controls="{{controls}}"
+  bindcontroltap="controltap"
+  markers="{{markers}}"
+  bindmarkertap="markertap"
+  bindregionchange="regionchange"
+  show-location="true"
+  enable-3D="true"
+  style="width: 100%; height: 800rpx;"
+></map>
+</view>

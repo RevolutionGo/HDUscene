@@ -1,0 +1,31 @@
+<view class='user'>
+  <!-- 未登录时 -->
+  <view class='logout' wx:if='{{!logged}}'>
+    <text>请登录后查看您发布文章</text>
+    <button open-type="getUserInfo" bindgetuserinfo="onGetUserInfo" class="userinfo-avatar">
+      登录
+    </button>
+  </view>
+  <view class='login' wx:if='{{logged}}'>
+    <view class='name'>
+      <image src='{{avatarUrl}}'></image>
+      <text>{{username}}</text>
+      <text>{{place}}</text>
+    </view>
+    <view class='collection' wx:if='{{newsList.length}}'>
+      <view class="my">我的发布</view>
+
+      <view class='box' wx:for='{{newsList}}' wx:key='{{index}}' data-id='{{item.id}}' bindtap='goDetail'>
+        <image src='/images/upload.png'></image>
+        <view class='right'>
+          <text class='title'>{{item.title}}</text>
+          <text>{{item.content}}</text>
+          <text class='see'>查看更多>></text>
+        </view>
+      </view>
+    </view>
+    <view class='collection' wx:if='{{!newsList.length}}' style='text-align:center;padding-top:50rpx;'>
+      <text style='color:#666;'>您还没有发布过文章</text>
+    </view>
+  </view>
+</view>
